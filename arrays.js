@@ -55,7 +55,27 @@ console.log(fruits.join(' -> '));
 console.log(fruits.reverse());
 //reverses order inside the array - actually changes the given array
 console.log(fruits);
+console.log(fruits.reverse());
 
 // ---- ARRAY SLICE ----------
+// returns a COPY of the array
+// if an index is specified it's FROM that index up to but NOT INCLUDING the second index
+const redFruit = fruits.slice(0, 1);
+console.log(redFruit);
+let yellow = fruits.slice(1);
+console.log(yellow);
+// OR counting from the back
+yellow = fruits.slice(-1);
+console.log(yellow);
+console.log(fruits);
+
 // ---- ARRAY SPLICE ----------
+// To insert or to delete
+const animals = ['shark', 'salmon', 'bear', 'cow', 'eagle'];
+
+// start at index 2, delete nothing, add in 'spider' at index 2
+animals.splice(2, 0, 'spider');
+console.log(animals);
+
 // ---- ARRAY SORT ----------
+//sorting

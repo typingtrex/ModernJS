@@ -79,3 +79,13 @@ console.log(animals);
 
 // ---- ARRAY SORT ----------
 //sorting
+
+// ---- ARRAY Stored as Reference ---
+let nums = [4, 5, 6, 7, 8];
+let otherNums = nums;
+// both are pointing to the same reference point
+otherNums.pop();
+otherNums.pop();
+otherNums.pop();
+console.log(nums, otherNums);
+// both are affected

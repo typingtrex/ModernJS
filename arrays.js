@@ -89,3 +89,10 @@ otherNums.pop();
 otherNums.pop();
 console.log(nums, otherNums);
 // both are affected
+
+// ---- NESTED ARRAYS -------
+const board = [
+  ['O', null, 'X'],
+  ['X', 'O', 'X'],
+  ['O', null, 'O'],
+];

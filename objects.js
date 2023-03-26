@@ -11,4 +11,8 @@ const fitBitData = {
   totalSteps: 304556,
   totalMiles: 6.74,
   avgCalorieBurn: 499,
+  '45 steps goal': true,
 };
+
+// console.log(fitBitData[45 steps goal]) does not work
+console.log(fitBitData['45 steps goal']);

@@ -6,3 +6,9 @@ const user = {
   age: 30,
   favoriteFood: 'spicy',
 };
+
+const fitBitData = {
+  totalSteps: 304556,
+  totalMiles: 6.74,
+  avgCalorieBurn: 499,
+};

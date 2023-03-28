@@ -34,3 +34,54 @@ const isValidPassword = (pass, userName) => {
 // console.log('should be true: ', isValidPassword('89Fjj1nms', 'dogLuvr')); //true
 console.log('should be false: ', isValidPassword('dogLuvr123!', 'dogLuvr')); //false
 // isValidPassword('hello1', 'dogLuvr') //false
+
+// ------ solutions from Udemy -------------
+/*
+function isValidPassword(password, username) {
+	if (password.length < 8) {
+		return false;
+	}
+	if (password.indexOf(' ') !== -1) {
+		return false;
+	}
+	if (password.indexOf(username) !== -1) {
+		return false;
+	}
+	return true;
+}
+
+function isValidPassword(password, username) {
+	if (
+		password.length < 8 ||
+		password.indexOf(' ') !== -1 ||
+		password.indexOf(username) !== -1
+	) {
+		return false;
+	}
+	return true;
+}
+
+function isValidPassword(password, username) {
+	const tooShort = password.length < 8;
+	const hasSpace = password.indexOf(' ') !== -1;
+	const tooSimilar = password.indexOf(username) !== -1;
+	if (tooShort || hasSpace || tooSimilar) return false;
+	return true;
+}
+
+function isValidPassword(password, username) {
+	const tooShort = password.length < 8;
+	const hasSpace = password.indexOf(' ') !== -1;
+	const tooSimilar = password.indexOf(username) !== -1;
+	if (!tooShort && !hasSpace && !tooSimilar) return true;
+	return false;
+}
+
+function isValidPassword(password, username) {
+	const tooShort = password.length < 8;
+	const hasSpace = password.indexOf(' ') !== -1;
+	const tooSimilar = password.indexOf(username) !== -1;
+	return !tooShort && !hasSpace && !tooSimilar;
+}
+
+*/

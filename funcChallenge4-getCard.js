@@ -9,6 +9,8 @@
 //----clubs,spades, hearts, diamonds
 //Return both in an object
 
+// ------- first attempt -------------------------------
+/*
 function getCard() {
   let result = {
     value: null,
@@ -16,7 +18,6 @@ function getCard() {
   };
   const randomValue = () => {
     const values = [
-      '1',
       '2',
       '3',
       '4',
@@ -40,6 +41,35 @@ function getCard() {
   randomValue();
   randomSuit();
   return result;
+}
+*/
+
+// -------- 2nd attempt with cleaner code -------------------------
+function pick(arr) {
+  return arr[Math.floor(Math.random() * arr.length)];
+}
+
+function getCard() {
+  const values = [
+    '2',
+    '3',
+    '4',
+    '5',
+    '6',
+    '7',
+    '8',
+    '9',
+    '10',
+    'J',
+    'Q',
+    'K',
+    'A',
+  ];
+  const suits = ['clubs', 'spades', 'hearts', 'diamonds'];
+  return {
+    value: pick(values),
+    suit: pick(suits),
+  };
 }
 
 console.log('result from getCard function: ', getCard());
@@ -81,7 +111,6 @@ function pick(arr) {
 
 function getCard() {
 	const values = [
-		'1',
 		'2',
 		'3',
 		'4',

@@ -36,3 +36,21 @@ const thing = {
 };
 thing.doSomething(4, 5); //20
 // by writin a function to an object, we are creating a method
+
+// ---- HIGHER ORDER FUNCTIONS ------
+// functions that operate on or with other functions. They can:
+// Accept other functions as arguments
+// Return a function
+
+// ---- example of a function with a function for an argument ----
+function runThreeTimes(func) {
+  func();
+  func();
+  func();
+}
+
+function cryAndComplain() {
+  console.log('WOE IS ME! WHY!!!!');
+}
+
+runThreeTimes(cryAndComplain);

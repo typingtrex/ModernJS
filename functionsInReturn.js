@@ -1,6 +1,8 @@
 // --- Functions as Return Values -------------------------
 // --- udemy examples: -----------------------------------
 // NOTE THIS IS NOT OOP ----------
+// PERKS of functional programming -- you don't need to call methods every time you want to call on the function
+// THIS METHOD only creates a state that you can utilize
 /*
 // This function returns a function!
 function multiplyBy(num) {
